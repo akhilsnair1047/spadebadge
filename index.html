@@ -231,15 +231,15 @@
     <div class="input">
       <label>Image Shape</label>
       <div class="select-container">
-        <div class="select" id="original" selected onclick="changeShape('original')">Original</div>
-        <div class="select" id="square" onclick="changeShape('square')">Square</div>
-        <div class="select" id="circle" onclick="changeShape('circle')">Circle</div>
+        <!-- <div class="select" id="original" selected onclick="changeShape('original')">Original</div>
+        <div class="select" id="square" onclick="changeShape('square')">Square</div> -->
+        <div class="select" id="circle" selected onclick="changeShape('circle')">Circle</div>
       </div>
     </div>
     <div class="input">
       <!-- <label>Image Shape</label> -->
       <p>Download #proudspadians badge and upload it in you social media handles by taging @spadeems.</p>
-     
+      
     </div>
     <div class="input" style="align-items: center;">
       <!-- <label>Image Shape</label> -->
@@ -264,7 +264,7 @@
   const canvas = document.querySelector('canvas')
   const ctx = canvas.getContext('2d')
   let image = ''
-  let shape = 'original'
+  let shape = 'circle'
 
   const uploadImage = () => {
     document.querySelector('input.profile-input').click()
